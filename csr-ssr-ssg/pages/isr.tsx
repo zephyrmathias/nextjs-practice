@@ -4,7 +4,7 @@ import useSWR, { SWRConfig } from 'swr'
 import type { Beer } from '../types/types'
 
 const api = 'https://random-data-api.com/api/beer/random_beer'
-const fetcher = (url) => fetch(url).then((res) => res.json())
+const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 type Props = {
   fallback: {
