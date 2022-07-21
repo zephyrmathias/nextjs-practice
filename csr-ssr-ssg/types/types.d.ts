@@ -21,3 +21,15 @@ export interface User {
     bs: string
   }
 }
+
+export interface Pokemon {
+  name: string
+  image: string
+  url: string
+}
+
+export interface PokemonsData {
+  pokemons: {
+    results: Pokemon[]
+  }
+}
