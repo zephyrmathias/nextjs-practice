@@ -1,7 +1,18 @@
 import { NextPage } from 'next'
+import type { Beer } from '../types/types'
 
-const ISRPage: NextPage = () => {
-  return <div>123</div>
+type Props = {
+  beer: Beer
+}
+
+const ISRPage: NextPage<Props> = ({ beer }: Props) => {
+  return (
+    <div style={{ margin: '20px', border: '1px solid red' }}>
+      <div>{beer.id}</div>
+      <div>{beer.brand}</div>
+      <div>{beer.name}</div>
+    </div>
+  )
 }
 
 export async function getStaticProps() {
