@@ -35,10 +35,11 @@ export async function getStaticPaths() {
     fallback: true,
     // fallback = false -> any paths not returned by getStaticPaths() = 404 page
     /** fallback = true 
-        -> it will try to generate a page 
+        it will try to generate a page 
         (paths that have not bbeen generated at build time will not result 404 page)
         it will serve fallback version of the page on the first request
         crawler will take fallback=blocking instead (wait until page finished)
+        *useful with large amount of page ex. product id page*
     **/
   }
 }
