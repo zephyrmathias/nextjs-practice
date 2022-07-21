@@ -44,6 +44,20 @@ const Home: NextPage = () => {
               <p>SSG Example</p>
             </a>
           </Link>
+
+          <Link href="/isr">
+            <a className={styles.card}>
+              <h2>ISR &rarr;</h2>
+              <p>ISR Example</p>
+            </a>
+          </Link>
+
+          <Link href="/users">
+            <a className={styles.card}>
+              <h2>getStaticPaths &rarr;</h2>
+              <p>getStaticPaths Example</p>
+            </a>
+          </Link>
         </div>
       </main>
 
